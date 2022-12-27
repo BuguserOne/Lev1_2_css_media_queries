@@ -1,0 +1,139 @@
+/* ----------GLOBAL---------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------MAIN---------- */
+
+body{
+    width: 100vw;
+    overflow: hidden;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 2.5rem 2.5rem 2.5rem 2.5rem;
+    grid-template-columns: 33.3% 33.3% 33.3% ;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+header{
+    background-color: aqua;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 2px;
+    border-radius: 10px;
+
+}
+
+article:first-of-type{
+    background-color: blue;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+article:nth-of-type(2){
+    background-color: blueviolet;
+    margin: 2px;
+    border-radius: 10px;
+}
+article:nth-of-type(3){
+    background-color: springgreen;
+    margin: 2px;
+    border-radius: 10px;
+}
+article:nth-of-type(4) {
+    background-color: red;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+aside{
+    background-color: brown;
+    overflow: hidden;
+    height: 5rem;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: darkgray;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+/* -------------------- */
+
+@media (max-width: 768px) {
+    main{
+        grid-template-columns: 50% 50% ;
+    }
+
+    aside{
+        grid-column-start: 1;
+        grid-column-end:4;
+        height: 2.5rem;
+        grid-row-start: 2;
+    }
+    
+    article:first-of-type{
+        grid-column-start: 1;
+    
+    }
+    article:nth-of-type(2){
+        grid-column-start: 2;
+    }
+    article:nth-of-type(3){
+        grid-row-start: 4;
+    }
+    article:nth-of-type(4){
+        grid-row-start: 4;
+    }
+    footer {
+        height: 2.5rem;
+    }
+}
+
+/* -------------------- */
+
+@media (max-width: 576px) {
+    article:first-of-type{
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 2.5rem;
+        tex
+    }
+    article:nth-of-type(2) {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 2.5rem;
+    }
+    article:nth-of-type(3) {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 2.5rem;
+    }
+    article:nth-of-type(4){
+        grid-row-start: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 2.5rem;
+    }
+    footer{
+        height: 2.5rem;
+    }
+    main aside {
+        
+    }
+}
